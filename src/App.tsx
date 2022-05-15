@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Page} from "./components/Page";
+import {OrderMaker} from "./components/OrderMaker";
+import {OrderLister} from "./components/OrderLister";
+import {OrderManager} from "./components/OrderManager";
+import  "../src/styles/app.scss";
 
-function App() {
+/*building up application from smaller components
+context: OrderManager
+componenst: Page, OrderMaker, OrderLister
+*/
+export const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={"app"}>
+      <OrderManager>
+      <Page>
+        <OrderMaker/>
+        <OrderLister/>
+      </Page>
+    </OrderManager>
     </div>
   );
 }
 
-export default App;
+

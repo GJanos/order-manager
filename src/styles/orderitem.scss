@@ -1,0 +1,49 @@
+//variables
+$backgroundColor: #ffffff;
+$shadowColor: #cac0c048;
+$fontWeight: 600;
+$hoverButton: #17C873;
+
+//styling
+.order-item-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    padding: 3%;
+    background: $backgroundColor;
+    border-radius: 30px;
+    box-shadow: 0 0 6px 6px $shadowColor;
+
+    .order-info-container{
+        display: grid;
+        width: 80%;
+        grid-template-columns: 20% 40% 20%;
+        grid-template-rows: repeat(2);
+        column-gap: 10%;
+        row-gap: 20%;
+
+        .order-item-header{
+            font-size: 14px;
+            font-weight: $fontWeight;
+        }
+    }
+    .order-button-container{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 1rem;
+
+        .order-button{
+            height: 1rem;
+            width: 1rem;
+            margin-right: 1rem;
+            &:hover {
+                color: $hoverButton;
+            }
+        }
+    }
+}

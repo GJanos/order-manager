@@ -1,0 +1,11 @@
+.page-placer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .page-container{
+        position: relative;
+        margin-top: 1rem;
+        width: 80%;
+    }
+}
+

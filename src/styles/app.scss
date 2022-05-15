@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+//variables
+$fontColor: #102544;
+$fontStyle: 'Epilogue', sans-serif;   
+$backgroundColor: #f1f5f8;
+
+//styling
+.app{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: $backgroundColor;
+    box-sizing: border-box;
+    position: relative;
+    font-family: $fontStyle;
+    color: $fontColor;
+}
